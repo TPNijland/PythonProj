@@ -1,5 +1,9 @@
 from flask import Flask
 
+# URL: 
+# Python: http://127.0.0.1:5000/
+# HTML: https://github.com/sealreth/YC_2307_Webshop/pulls 
+
 app = Flask(__name__)
 
 @app.route("/")
