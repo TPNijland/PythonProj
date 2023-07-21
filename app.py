@@ -1,11 +1,12 @@
 from flask import Flask
+from flask_cors import CORS
 import felix
 
 app = Flask(__name__)
-
+CORS(app)
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "<p>Hello, World!!!</p>"
 
 @app.route("/tweedeendpoint")
 def hello_world1():
