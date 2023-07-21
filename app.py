@@ -1,4 +1,5 @@
 from flask import Flask
+import felix
 
 # URL: 
 # Python: http://127.0.0.1:5000/
@@ -17,3 +18,7 @@ def hello_world1():
 @app.route("/derde/<onsgegeven>")
 def hello_world3(onsgegeven):
     return "Dit is ons gegeven"+onsgegeven
+
+@app.route("/felix")
+def felixfunc():
+    return felix.mijnfunctie()
