@@ -13,13 +13,23 @@ CORS(app)
 def hello_world():
     return "<p>Hello, World!!!</p>"
 
-@app.route("/felix")
-def felixfunc():
-    return felix.mijnfunctie()
-
 @app.route("/tom")
 def tomfunc():
-    return tom.mijnfunctie2()
+    return tom.mijnfunctie3()
+    #return tom.mijnfunctie2()
+
+""" @app.route("/tom/<Age>")
+def tomfunc(Age):
+    return tom.mijnfunctie3(Age)
+    #return tom.mijnfunctie2() """
+
+
+
+
+
+""" @app.route("/felix")
+def felixfunc():
+    return felix.mijnfunctie() """
 
 """ @app.route("/tweedeendpoint")
 def hello_world1():
