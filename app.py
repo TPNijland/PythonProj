@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 import felix
 import tom
 
@@ -7,10 +8,10 @@ import tom
 # HTML: https://github.com/sealreth/YC_2307_Webshop/pulls 
 
 app = Flask(__name__)
-
+CORS(app)
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "<p>Hello, World!!!</p>"
 
 @app.route("/tom")
 def tomfunc():
