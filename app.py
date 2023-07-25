@@ -18,10 +18,10 @@ def tomfunc():
     return tom.mijnfunctie3()
     #return tom.mijnfunctie2()
 
-""" @app.route("/tom/<Age>")
-def tomfunc(Age):
-    return tom.mijnfunctie3(Age)
-    #return tom.mijnfunctie2() """
+@app.route("/tom/<Age>")
+def tomfunc2(Age):
+    return tom.mijnfunctie4(Age)
+    #return tom.mijnfunctie2() 
 
 
 
