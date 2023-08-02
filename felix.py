@@ -14,4 +14,9 @@ def chartbarfunctie():
     
     return parsed 
 
+def chartbarfunctie2(katg):
+    print(katg)
+    
+    return "nieuw met katgo"+katg 
+
 #print(chartbarfunctie())
