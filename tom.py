@@ -30,8 +30,6 @@ def mijnfunctie3():
     
     return parsed 
 
-
-
 def mijnfunctie4(Leeftijd):
     print("plz werk?", Leeftijd)
     Festival = pd.read_csv("Festival.csv")
@@ -48,6 +46,9 @@ def mijnfunctie4(Leeftijd):
     parsed = loads(result)
 
     return parsed
+
+def chartbarfunctie2():
+    return "tombarchart"
     
 
 

@@ -5,7 +5,9 @@ import tom
 
 # URL: 
 # Python: http://127.0.0.1:5000/
-# HTML: https://github.com/sealreth/YC_2307_Webshop/pulls 
+# MainGithub: https://github.com/sealreth/YC_2307_Webshop/pulls
+# HTML: file:///C:/Users/Tom%20Nijland/Desktop/YoungCap/TraineeShip/Project/PythonProject/Python.html
+
 
 app = Flask(__name__)
 
@@ -22,6 +24,10 @@ def tomfunc():
 def tomfunc2(Age):
     return tom.mijnfunctie4(Age)
 
+
+@app.route("/tombarchart")
+def tomapppy():
+    return tom.chartbarfunctie2()
 
 @app.route("/felixchartbar")
 def felixapppy():
