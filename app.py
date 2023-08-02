@@ -29,6 +29,10 @@ def tomfunc2(Age):
 def tomapppy():
     return tom.chartbarfunctie2()
 
+@app.route("/tombarchart2/<kategorie>")
+def tomapppy3(kategorie):
+    return tom.chartbarfunctie3(kategorie)
+
 @app.route("/felixchartbar")
 def felixapppy():
     return felix.chartbarfunctie()
