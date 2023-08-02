@@ -16,7 +16,12 @@ def chartbarfunctie():
 
 def chartbarfunctie2(katg):
     print(katg)
+    df = pd.read_csv("Festival.csv")
+    filtered_df = df[df['Product_Category'] == katg]
+    result = filtered_df.to_json(orient="records")
+    parsed = json.loads(result)
     
-    return "nieuw met katgo"+katg 
+    return parsed
+
 
 #print(chartbarfunctie())
