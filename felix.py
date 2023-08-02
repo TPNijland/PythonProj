@@ -12,6 +12,6 @@ def chartbarfunctie():
     result = filtered_df.to_json(orient="records")
     parsed = json.loads(result)
     
-    return "check it kort!!!" 
+    return parsed 
 
 #print(chartbarfunctie())
