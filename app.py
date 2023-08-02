@@ -22,7 +22,9 @@ def tomfunc2(Age):
     return tom.mijnfunctie4(Age)
 
 
-
+@app.route("/felixchartbar")
+def felixapppy():
+    return felix.chartbarfunctie()
 
 
 """ @app.route("/felix")
