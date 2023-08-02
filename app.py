@@ -8,6 +8,7 @@ import tom
 # HTML: https://github.com/sealreth/YC_2307_Webshop/pulls 
 
 app = Flask(__name__)
+
 CORS(app)
 @app.route("/")
 def hello_world():
@@ -27,6 +28,9 @@ def felixapppy():
     return felix.chartbarfunctie()
 
 
+app.debug = True
+if __name__ == '__main__':
+    app.run()
 """ @app.route("/felix")
 def felixfunc():
     return felix.mijnfunctie() """
