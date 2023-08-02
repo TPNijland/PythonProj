@@ -10,6 +10,7 @@ import tom
 
 
 app = Flask(__name__)
+
 CORS(app)
 @app.route("/")
 def hello_world():
@@ -33,6 +34,9 @@ def felixapppy():
     return felix.chartbarfunctie()
 
 
+app.debug = True
+if __name__ == '__main__':
+    app.run()
 """ @app.route("/felix")
 def felixfunc():
     return felix.mijnfunctie() """

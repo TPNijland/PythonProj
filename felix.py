@@ -1,4 +1,5 @@
-import pandas
+import pandas as pd
+import json
 
 def mijnfunctie():
     pokemons = pandas.read_csv("Pokemon.csv")
@@ -6,4 +7,11 @@ def mijnfunctie():
     return "hij doet het"
 
 def chartbarfunctie():
-    return "felix barchart"
+    df = pd.read_csv("Festival.csv")
+    filtered_df = df[df['Product_Category'] == 'Clothing & Apparel']
+    result = filtered_df.to_json(orient="records")
+    parsed = json.loads(result)
+    
+    return "check it kort!!!" 
+
+#print(chartbarfunctie())
