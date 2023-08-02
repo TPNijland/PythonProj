@@ -48,7 +48,12 @@ def mijnfunctie4(Leeftijd):
     return parsed
 
 def chartbarfunctie2():
-    return "tombarchart"
+    df = pd.read_csv("Festival.csv")
+    filtered_df = df[df['Product_Category'] == 'Clothing & Apparel']
+    result = filtered_df.to_json(orient="records")
+    parsed = loads(result)
+
+    return parsed
     
 
 
