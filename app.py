@@ -33,6 +33,9 @@ def tomapppy():
 def felixapppy():
     return felix.chartbarfunctie()
 
+@app.route("/felixchartbar2/<kategorie>")
+def felixapppy2(kategorie):
+    return felix.chartbarfunctie2(kategorie)
 
 app.debug = True
 if __name__ == '__main__':
