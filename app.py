@@ -10,7 +10,7 @@ import tom
 # DATA SOURCE: https://www.kaggle.com/datasets/prajwal6362venom/diwali-sales 
 
 # Flask:
-# 
+# flask --app app.py --debug run
 
 app = Flask(__name__)
 
