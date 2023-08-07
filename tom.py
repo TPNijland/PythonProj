@@ -59,6 +59,17 @@ def State():
 
     return parsed
 
+def HeatmapAgeProdID():
+    print()
+    df = pd.read_csv("Festival.csv")
+    desired_columns = ['Age Group', 'Product_Category', 'Amount']
+    filtered_df = df[desired_columns]
+    filtered_df.dropna(inplace=True)
+    result = filtered_df.to_json(orient="records")
+    parsed = loads(result)
+
+    return parsed
+
 
 
 
