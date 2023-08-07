@@ -9,6 +9,9 @@ import tom
 # HTML: file:///C:/Users/Tom%20Nijland/Desktop/YoungCap/TraineeShip/Project/PythonProject/Python.html
 # DATA SOURCE: https://www.kaggle.com/datasets/prajwal6362venom/diwali-sales 
 
+# Flask:
+# 
+
 app = Flask(__name__)
 
 #Important App.Routes:
@@ -31,6 +34,10 @@ def agesexdapp():
 @app.route("/State")
 def stateapp():
     return tom.State()
+
+@app.route("/HeatmapAgeProdID")
+def heatapp():
+    return tom.HeatmapAgeProdID()
 
 
 
