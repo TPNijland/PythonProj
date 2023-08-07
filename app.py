@@ -7,10 +7,34 @@ import tom
 # Python: http://127.0.0.1:5000/
 # MainGithub: https://github.com/sealreth/YC_2307_Webshop/pulls
 # HTML: file:///C:/Users/Tom%20Nijland/Desktop/YoungCap/TraineeShip/Project/PythonProject/Python.html
-
+# DATA SOURCE: https://www.kaggle.com/datasets/prajwal6362venom/diwali-sales 
 
 app = Flask(__name__)
 
+#Important App.Routes:
+@app.route("/tombarchart2/<kategorie>")
+def tomapppy3(kategorie):
+    return tom.chartbarfunctie3(kategorie)
+
+@app.route("/JobEarnings")
+def baanapp():
+    return tom.JobEarnings()
+
+@app.route("/ProdEarnings")
+def prodapp():
+    return tom.ProdEarnings()
+
+@app.route("/AgeSexAmount")
+def agesexdapp():
+    return tom.AgeSexAmount()
+
+@app.route("/State")
+def stateapp():
+    return tom.State()
+
+
+
+#Extra App.Routes:
 CORS(app)
 @app.route("/")
 def hello_world():
@@ -29,9 +53,7 @@ def tomfunc2(Age):
 def tomapppy():
     return tom.chartbarfunctie2()
 
-@app.route("/tombarchart2/<kategorie>")
-def tomapppy3(kategorie):
-    return tom.chartbarfunctie3(kategorie)
+
 
 @app.route("/felixchartbar")
 def felixapppy():

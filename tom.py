@@ -5,14 +5,66 @@ from flask import jsonify
 from decimal import Decimal
 
 
-""" def mijnfunctie2():
-    print("plz werk?")
-    Festival = pandas.read_csv("Festival.csv")
-    result = Festival.to_json(orient="records")
+#Important data I'm using
+def chartbarfunctie3(katg):
+    print(katg)
+    df = pd.read_csv("Festival.csv")
+    filtered_df = df[df['Product_Category'] == katg]
+    result = filtered_df.to_json(orient="records")
     parsed = loads(result)
     
-    return dumps(parsed, indent=4)  """ 
+    return parsed
 
+def JobEarnings():
+    print()
+    df = pd.read_csv("Festival.csv")
+    desired_columns = ['Amount', 'Occupation']
+    filtered_df = df[desired_columns]
+    filtered_df.dropna(inplace=True)
+    result = filtered_df.to_json(orient="records")
+    parsed = loads(result)
+
+    return parsed
+
+def ProdEarnings():
+    print()
+    df = pd.read_csv("Festival.csv")
+    desired_columns = ['Amount', 'Product_Category']
+    filtered_df = df[desired_columns]
+    filtered_df.dropna(inplace=True)
+    result = filtered_df.to_json(orient="records")
+    parsed = loads(result)
+
+    return parsed
+
+def AgeSexAmount():
+    print()
+    df = pd.read_csv("Festival.csv")
+    desired_columns = ['Amount', 'Gender', 'Age Group']
+    filtered_df = df[desired_columns]
+    filtered_df.dropna(inplace=True)
+    result = filtered_df.to_json(orient="records")
+    parsed = loads(result)
+
+    return parsed
+
+def State():
+    print()
+    df = pd.read_csv("Festival.csv")
+    desired_columns = ['Amount', 'State', 'Zone']
+    filtered_df = df[desired_columns]
+    filtered_df.dropna(inplace=True)
+    result = filtered_df.to_json(orient="records")
+    parsed = loads(result)
+
+    return parsed
+
+
+
+
+
+
+#Extra data
 def mijnfunctie3():
     print("plz werk?")
     Festival = pd.read_csv("Festival.csv")
@@ -55,14 +107,7 @@ def chartbarfunctie2():
 
     return parsed
 
-def chartbarfunctie3(katg):
-    print(katg)
-    df = pd.read_csv("Festival.csv")
-    filtered_df = df[df['Product_Category'] == katg]
-    result = filtered_df.to_json(orient="records")
-    parsed = loads(result)
-    
-    return parsed
+
      
 
 
