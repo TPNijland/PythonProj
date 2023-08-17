@@ -23,7 +23,6 @@ def JobEarnings():
     filtered_df.dropna(inplace=True)
     result = filtered_df.to_json(orient="records")
     parsed = loads(result)
-
     return parsed
 
 def ProdEarnings():
@@ -34,7 +33,6 @@ def ProdEarnings():
     filtered_df.dropna(inplace=True)
     result = filtered_df.to_json(orient="records")
     parsed = loads(result)
-
     return parsed
 
 def AgeSexAmount():
@@ -45,7 +43,6 @@ def AgeSexAmount():
     filtered_df.dropna(inplace=True)
     result = filtered_df.to_json(orient="records")
     parsed = loads(result)
-
     return parsed
 
 def State():
@@ -56,7 +53,6 @@ def State():
     filtered_df.dropna(inplace=True)
     result = filtered_df.to_json(orient="records")
     parsed = loads(result)
-
     return parsed
 
 def HeatmapAgeProdID():
@@ -67,7 +63,6 @@ def HeatmapAgeProdID():
     filtered_df.dropna(inplace=True)
     result = filtered_df.to_json(orient="records")
     parsed = loads(result)
-
     return parsed
 
 
