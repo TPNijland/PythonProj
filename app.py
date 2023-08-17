@@ -6,6 +6,7 @@ import group
 
 # URL: 
 # Python: http://127.0.0.1:5000/
+# ONLINE: https://zealous-island-01ea8fd03.3.azurestaticapps.net/index.html
 # MainGithub: https://github.com/sealreth/YC_2307_Webshop/pulls
 # HTML: file:///C:/Users/Tom%20Nijland/Desktop/YoungCap/TraineeShip/Project/PythonProject/Python.html
 # DATA SOURCE: https://www.kaggle.com/datasets/prajwal6362venom/diwali-sales 
@@ -39,6 +40,13 @@ def heatapp():
 @app.route("/Producten")
 def Prods():
     return group.Producten()
+
+
+
+
+
+
+
 
 
 
